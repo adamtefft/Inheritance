@@ -3,6 +3,7 @@
 
 import vehicles
 
+
 def main():
     # Create a Car object for a used 2001 BMW
     # with 70,000 miles, priced at $15,000, with
@@ -21,7 +22,7 @@ def main():
 
     print('USED CAR INVENTORY')
     print('===================')
-    
+
     # Display the car's data.
     print('The following car is in inventory:')
     print('Make:', car.get_make())
@@ -30,7 +31,7 @@ def main():
     print('Price:', car.get_price())
     print('Number of doors:', car.get_doors())
     print()
-    
+
     # Display the truck's data.
     print('The following pickup truck is in inventory.')
     print('Make:', truck.get_make())
@@ -39,7 +40,7 @@ def main():
     print('Price:', truck.get_price())
     print('Drive type:', truck.get_drive_type())
     print()
-    
+
     # Display the SUV's data.
     print('The following SUV is in inventory.')
     print('Make:', suv.get_make())
@@ -48,6 +49,6 @@ def main():
     print('Price:', suv.get_price())
     print('Passenger Capacity:', suv.get_pass_cap())
 
+
 # Call the main function.
 main()
-
