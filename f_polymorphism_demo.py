@@ -2,6 +2,7 @@
 
 import f_animals as animals
 
+
 def main():
     # Create a Mammal object, a Dog object, and
     # a Cat object.
@@ -9,6 +10,9 @@ def main():
     dog = animals.Dog()
     cat = animals.Cat()
 
+    show_mammal_info(mammal)
+    show_mammal_info(dog)
+    show_mammal_info(cat)
 
     # Display information about each one.
     print('Here are some animals and')
@@ -27,5 +31,14 @@ def main():
     cat.show_species()
     cat.make_sound()
 
+
+def show_mammal_info(creature):
+    if isinstance(creature, animals.Mammal):
+        creature.show_species()
+        creature.make_sound()
+    else:
+        print(f"{creature} is not from the mammal class")
 # Call the main function.
+
+
 main()
